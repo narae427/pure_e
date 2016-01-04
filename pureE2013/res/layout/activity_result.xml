@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res/com.example.puree2013"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/resultbg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.example.puree2013.ProgressWheel
+            android:id="@+id/progressBarTwo"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            ProgressWheel:barColor="#FFBB00"
+            ProgressWheel:barLength="60dp"
+            ProgressWheel:barWidth="40dp"
+            ProgressWheel:rimColor="#44FFFFFF"
+            ProgressWheel:rimWidth="25dp"
+            ProgressWheel:spinSpeed="3dp"
+            ProgressWheel:textColor="#000000"
+            ProgressWheel:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#ffffffff"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:background="@drawable/resulticonbg"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/retrybtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/result_1" />
+
+            <Button
+                android:id="@+id/homereturnbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/result_2" />
+
+            <Button
+                android:id="@+id/replaybtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/result_3" />
+
+            <Button
+                android:id="@+id/detailpagebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/result_4" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

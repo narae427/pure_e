@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/listbg" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=""
+            android:textSize="35dp" />
+    </LinearLayout>
+	<FrameLayout 
+   	 	android:orientation="vertical"
+   	 	android:layout_weight="7"
+   		android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center"
+    	>
+    <com.example.puree2013.CoverFlow 
+        android:id="@+id/cover_flow"
+		android:layout_gravity="center"		
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="bottom"/>
+    
+    <LinearLayout
+        android:id="@+id/album_text_list"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom|center"
+		android:gravity="bottom">
+		<TextView
+			android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+		    />
+        
+    </LinearLayout>
+  
+
+    
+<!--	<TextView  -->
+<!--		android:id="@+id/album_test"-->
+<!--	    android:layout_width="fill_parent" -->
+<!--	    android:layout_height="wrap_content" -->
+<!--	    android:text="album_artist"-->
+<!--	    />-->
+	</FrameLayout>
+     
+    
+  <LinearLayout 
+      android:layout_width="match_parent" 
+      android:layout_height="wrap_content" 
+      android:layout_weight="5" 
+      android:orientation="horizontal">
+- 	<LinearLayout 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_weight="1" 
+		android:orientation="vertical">
+
+  		<Button
+  		    android:id="@+id/playBtn"
+  		    android:layout_width="70dp"
+  		    android:layout_height="70dp"
+  		    android:layout_gravity="center"
+  		    android:text="" 
+  		    android:background="@drawable/play_btn"/>
+ 
+  	</LinearLayout>
+- 	<LinearLayout 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_weight="1" 
+		android:orientation="vertical">
+
+  		<Button
+  		    android:id="@+id/testBtn"
+  		    android:layout_width="70dp"
+  		    android:layout_height="70dp"
+  		    android:layout_gravity="center"
+  		 
+  		    android:background="@drawable/start_btn" />
+ 
+  	</LinearLayout>
+  </LinearLayout>
+
+</LinearLayout>
